@@ -1,0 +1,30 @@
+{
+	"dependencies": {
+		"ejs": "^6.0.1",
+		"express": "^5.2.1",
+		"pg": "^8.23.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.5.11"
+	},
+	"name": "inventory-app",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint-format": "biome check --write"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/PrestonJawa/inventory-app.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"bugs": {
+		"url": "https://github.com/PrestonJawa/inventory-app/issues"
+	},
+	"homepage": "https://github.com/PrestonJawa/inventory-app#readme"
+}
