@@ -1,0 +1,72 @@
+:root {
+	/* font colors */
+	--color-primary: #1992d4;
+
+	/* background colors */
+	--bg-primary: #ffffff;
+	--bg-secondary: #f6f8fa;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%; /* Makes rem = 10px */
+}
+
+body {
+	font-size: 1.6rem; /* sets default font back */
+}
+
+ul {
+	list-style: none;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 50px;
+	background-color: var(--bg-secondary);
+}
+
+.nav-list {
+	display: flex;
+	color: var(--color-primary);
+	background-color: var(--bg-primary);
+	gap: 25px;
+}
+
+.nav-list a {
+	text-decoration: none;
+	color: var(--color-primary);
+}
+
+.box {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	background-color: yellow;
+	height: 25rem;
+	width: 25rem;
+	margin: 4rem;
+}
+
+.add-box {
+	display: flex;
+	background-color: red;
+	height: 25rem;
+	width: 25rem;
+	margin: 4rem;
+}
+
+.add-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	background-color: transparent;
+}
