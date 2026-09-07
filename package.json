@@ -13,7 +13,10 @@
 	"main": "app.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"lint-format": "biome check --write"
+		"lint-format": "biome check --write",
+		"seed": "node --env-file=.env db/populatedb.js",
+		"start": "node --env-file=.env app.js",
+		"dev": "node --watch app.js"
 	},
 	"repository": {
 		"type": "git",
