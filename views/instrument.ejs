@@ -3,6 +3,11 @@
 <%- include('partials/head') %>
 <body>
   <%- include('partials/navbar') %>
-  <%- include('partials/additionBox') %>
+  <div class="instrument-list">
+    <%- include('partials/additionBox') %>
+    <% instruments.forEach(instrument => { %>
+      <%- include('partials/instrumentBox', {instrument: instrument}) %>
+    <%}) %>
+  </div>
 </body>
 </html>

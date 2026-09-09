@@ -25,6 +25,7 @@ ul {
 	list-style: none;
 }
 
+/* navbar related */
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -44,7 +45,8 @@ nav {
 	color: var(--color-primary);
 }
 
-.box {
+/* box related */
+.instrument-box {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -69,4 +71,9 @@ nav {
 	height: 100%;
 	width: 100%;
 	background-color: transparent;
+}
+
+.instrument-list {
+	display: flex;
+	flex-flow: row wrap;
 }
