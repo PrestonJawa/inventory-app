@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<%- include('partials/head') %>
+<body>
+  <%- include('partials/navbar') %>
+  <form action="/family/new" method="POST">
+    <div>
+      <label for="family">Instrument Family*</label>
+      <input type="text" id="family" name="family" required>
+    </div>
+    <button type="submit" class="add">Add Family</button>
+  </form>
+</body>
+</html>

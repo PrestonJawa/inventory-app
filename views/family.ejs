@@ -3,5 +3,11 @@
 <%- include('partials/head') %>
 <body>
   <%- include('partials/navbar') %>
+  <div class="family-list">
+    <%- include('partials/familyAddBox') %>
+    <% families.forEach(family => { %>
+      <%- include('partials/familyBox', {family : family}) %>
+    <%}) %>
+  </div>
 </body>
 </html>

@@ -1,0 +1,9 @@
+<div class="instrument-box">
+    <h3><%=family.family%></h3>
+    <form action="/family/<%= family.id %>/edit" method="GET">
+        <button type="submit" class="edit">Edit</button>
+    </form>
+    <form action="/family/<%= family.id %>/delete" method="GET">
+        <button type="submit" class="delete">Delete</button>
+    </form>
+</div>

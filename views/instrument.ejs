@@ -4,7 +4,7 @@
 <body>
   <%- include('partials/navbar') %>
   <div class="instrument-list">
-    <%- include('partials/additionBox') %>
+    <%- include('partials/instrumentAddBox') %>
     <% instruments.forEach(instrument => { %>
       <%- include('partials/instrumentBox', {instrument: instrument}) %>
     <%}) %>

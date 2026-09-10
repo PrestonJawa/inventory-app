@@ -5,12 +5,12 @@ const { Client } = require("pg");
 const SQL = `
 CREATE TABLE IF NOT EXISTS families (
   id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-  family VARCHAR ( 255 )
+  family VARCHAR ( 255 ) UNIQUE
 );
 
 CREATE TABLE IF NOT EXISTS instruments (
   id INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-  instrument VARCHAR(100),
+  instrument VARCHAR(100) UNIQUE,
   family_id INTEGER REFERENCES families(id),
   price NUMERIC(10, 2) NOT NULL,
   quantity INTEGER NOT NULL DEFAULT 0

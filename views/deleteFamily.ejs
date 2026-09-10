@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<%- include('partials/head') %>
+<body>
+  <%- include('partials/navbar') %>
+  <form action="/family/<%= id %>/delete" method="POST">
+    <button type="submit" class="delete">Delete</button>
+  </form>
+</body>
+</html>
