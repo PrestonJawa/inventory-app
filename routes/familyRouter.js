@@ -4,6 +4,7 @@ const fc = require("../controllers/familyController");
 const familyRouter = Router();
 
 familyRouter.get("/", fc.familyGet);
+familyRouter.get("/:id", fc.familyInstrumentGet);
 
 familyRouter.get("/new", fc.familyNewGet);
 familyRouter.post("/new", fc.familyNewPost);

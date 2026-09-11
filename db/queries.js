@@ -56,10 +56,21 @@ async function deleteFamily(id) {
 	return rows[0];
 }
 
+async function getInstrumentsByFamily(id) {
+	const { rows } = await pool.query(
+		`SELECT * FROM instruments
+		WHERE family_id=$1`,
+		[id],
+	);
+
+	return rows;
+}
+
 module.exports = {
 	getAllInstruments,
 	deleteInstrument,
 	getAllFamilies,
 	addFamily,
 	deleteFamily,
+	getInstrumentsByFamily,
 };

@@ -3,10 +3,10 @@
     <p>Instrument Family: <%=instrument.family%></p>
     <p>Price: <%=instrument.price%></p>
     <p>Quantity: <%=instrument.quantity%></p>
-    <form action="instrument/<%= instrument.id %>/edit" method="GET">
+    <form action="/instrument/<%= instrument.id %>/edit" method="GET">
         <button type="submit" class="edit">Edit</button>
     </form>
-    <form action="instrument/<%= instrument.id %>/delete" method="GET">
+    <form action="/instrument/<%= instrument.id %>/delete" method="GET">
         <button type="submit" class="delete">Delete</button>
     </form>
 </div>

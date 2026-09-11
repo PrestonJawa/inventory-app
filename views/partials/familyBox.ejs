@@ -1,5 +1,7 @@
 <div class="instrument-box">
-    <h3><%=family.family%></h3>
+  <a href="/family/<%= family.id %>" class="family-link">
+    <h3><%= family.family %></h3>
+  </a>
     <form action="/family/<%= family.id %>/edit" method="GET">
         <button type="submit" class="edit">Edit</button>
     </form>

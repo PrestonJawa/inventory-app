@@ -9,6 +9,12 @@ exports.familyNewGet = (req, res) => {
 	res.render("addFamily", { title: "Instrument Family" });
 };
 
+exports.familyInstrumentGet = async (req, res) => {
+	const instruments = await queries.getInstrumentsByFamily(req.params.id);
+
+	res.render("instrumentsFamily", { instruments, title: "Family_NAME" });
+};
+
 exports.familyNewPost = async (req, res) => {
 	const { family } = req.body;
 	const result = await queries.addFamily(family);
